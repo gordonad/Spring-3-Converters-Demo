@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:show id="ps_com_gordondickens_springformatter_entity_Employee" object="${employee}" path="/employees" z="egaXoMCdz5pwX0bksPBPwDj/Fbg=">
+        <field:display field="firstName" id="s_com_gordondickens_springformatter_entity_Employee_firstName" object="${employee}" z="k9gI33mKXe4o1/cDv26d6nOT5Mw="/>
+        <field:display field="lastName" id="s_com_gordondickens_springformatter_entity_Employee_lastName" object="${employee}" z="HmFO8BB0Y0sN0DNoIFlQ2HjmBAE="/>
+        
+        <field:display field="salary" id="s_com_gordondickens_springformatter_entity_Employee_salary" object="${employee}" z="qPKFQnBcNSqZDE5xH0ISKuRmLKc="/>
+        
+    
+    
+    <field:display field="socialSecurityNumber" id="s_com_gordondickens_springformatter_entity_Employee_socialSecurityNumber" object="${employee}" z="s60+1Ml58ou3rAjzs9zP57aUa2I="/>
+    <field:display field="hireDate" id="s_com_gordondickens_springformatter_entity_Employee_hireDate" object="${employee}" z="1WdPR5MClvEeVCtGEDZ9yErB4B0="/>
+    </page:show>
+</div>

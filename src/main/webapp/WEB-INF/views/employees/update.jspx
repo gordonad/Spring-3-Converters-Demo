@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:field="urn:jsptagdir:/WEB-INF/tags/form/fields" xmlns:form="urn:jsptagdir:/WEB-INF/tags/form" xmlns:jsp="http://java.sun.com/JSP/Page" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <form:update id="fu_com_gordondickens_springformatter_entity_Employee" modelAttribute="employee" path="/employees" z="iRFv4ZQR+h9MeXSSoHl58R3AaPw=">
+        <field:input field="firstName" id="c_com_gordondickens_springformatter_entity_Employee_firstName" required="true" z="9megZniJ5ocXLce1zgSWF3sSSaU="/>
+        <field:input field="lastName" id="c_com_gordondickens_springformatter_entity_Employee_lastName" required="true" z="8pXSG2nI13BdNSwSvzTj0mJHpnY="/>
+        
+        <field:input field="salary" id="c_com_gordondickens_springformatter_entity_Employee_salary" required="true" validationMessageCode="field_invalid_number" z="xJSxRcxzW+wlyYL0pOiopK/KFxg="/>
+        
+    
+    
+    <field:input field="socialSecurityNumber" id="c_com_gordondickens_springformatter_entity_Employee_socialSecurityNumber" z="Criv+4Edm5l58hHx9ka2feVHhvM="/>
+    <field:input field="hireDate" id="c_com_gordondickens_springformatter_entity_Employee_hireDate" required="true" z="AKx3v3/p9WsDZUdyDKK3Z42w9kY="/>
+    </form:update>
+</div>

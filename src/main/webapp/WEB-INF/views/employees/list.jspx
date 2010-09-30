@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<div xmlns:jsp="http://java.sun.com/JSP/Page" xmlns:page="urn:jsptagdir:/WEB-INF/tags/form" xmlns:table="urn:jsptagdir:/WEB-INF/tags/form/fields" version="2.0">
+    <jsp:output omit-xml-declaration="yes"/>
+    <page:list id="pl_com_gordondickens_springformatter_entity_Employee" items="${employees}" z="r8r8hrwj2FNn8+iNiFJqV82mBiw=">
+        <table:table data="${employees}" id="l_com_gordondickens_springformatter_entity_Employee" path="/employees" z="ZCtdZGGASjIyAzOeW7e5VYoWTP0=">
+            <table:column id="c_com_gordondickens_springformatter_entity_Employee_firstName" property="firstName" z="lnwfxgdAy2w5FkhMKQleI34cSiA="/>
+            <table:column id="c_com_gordondickens_springformatter_entity_Employee_lastName" property="lastName" z="YPMdTn61CpQYjdIGk2s7/2NepBU="/>
+            
+            <table:column id="c_com_gordondickens_springformatter_entity_Employee_salary" property="salary" z="TE0BPEfY7mSxhFLdCCwpWcuoZNA="/>
+            
+        
+        
+        <table:column id="c_com_gordondickens_springformatter_entity_Employee_socialSecurityNumber" property="socialSecurityNumber" z="uQr2+MBf34hNrKECydvyU/J6JMc="/>
+        <table:column id="c_com_gordondickens_springformatter_entity_Employee_hireDate" property="hireDate" z="/CtO9CHuGviTCqh1dEnHfniz5DY="/>
+        </table:table>
+    </page:list>
+</div>
