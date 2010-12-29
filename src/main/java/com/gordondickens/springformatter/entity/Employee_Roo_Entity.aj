@@ -6,7 +6,6 @@ package com.gordondickens.springformatter.entity;
 import com.gordondickens.springformatter.entity.Employee;
 import java.lang.Integer;
 import java.lang.Long;
-import java.lang.SuppressWarnings;
 import java.util.List;
 import javax.persistence.Column;
 import javax.persistence.EntityManager;
@@ -85,12 +84,11 @@ privileged aspect Employee_Roo_Entity {
     }
     
     public static long Employee.countEmployees() {
-        return ((Number) entityManager().createQuery("select count(o) from Employee o").getSingleResult()).longValue();
+        return entityManager().createQuery("select count(o) from Employee o", Long.class).getSingleResult();
     }
     
-    @SuppressWarnings("unchecked")
     public static List<Employee> Employee.findAllEmployees() {
-        return entityManager().createQuery("select o from Employee o").getResultList();
+        return entityManager().createQuery("select o from Employee o", Employee.class).getResultList();
     }
     
     public static Employee Employee.findEmployee(Long id) {
@@ -98,9 +96,8 @@ privileged aspect Employee_Roo_Entity {
         return entityManager().find(Employee.class, id);
     }
     
-    @SuppressWarnings("unchecked")
     public static List<Employee> Employee.findEmployeeEntries(int firstResult, int maxResults) {
-        return entityManager().createQuery("select o from Employee o").setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
+        return entityManager().createQuery("select o from Employee o", Employee.class).setFirstResult(firstResult).setMaxResults(maxResults).getResultList();
     }
     
 }

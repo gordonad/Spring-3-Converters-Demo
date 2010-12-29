@@ -17,9 +17,9 @@
   <c:set var="userLocale">
     <c:out value="${pageContext.response.locale}" default="en" />
   </c:set>
-
+  
   <script type="text/javascript">var djConfig="${userLocale}"; </script>
-
+  
   <script src="${dojo_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
   <script src="${spring_url}" type="text/javascript"><!-- /required for FF3 and Opera --></script>
   <script src="${spring_dojo_url}" type="text/javascript"><!-- required for FF3 and Opera --></script>
